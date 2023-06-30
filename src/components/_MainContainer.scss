@@ -1,0 +1,221 @@
+@import "../colors";
+
+.main-container{
+    width: 850px;
+    height: 500px;
+    background-color:  $White;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: row;
+    @media screen and (max-width: 900px){
+        flex-direction: column-reverse;
+        width: 100vw;
+        height: 100vh;
+        border-radius: 0;
+    }
+}
+
+.main-container-success{
+    width: 425px;
+    height: 425px;
+    margin: 0 auto;
+    padding-inline: 1.5rem;
+    background-color:  $White;
+    border-radius: 25px;
+    display: flex;
+    @media screen and (max-width: 900px){
+        width: 100vw;
+        height: 100vh;
+        border-radius: 0;
+        padding-top: 20%;
+        padding-inline: 1rem;
+        display: block;
+    }
+}
+
+.main-section{
+    width: 50%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    @media screen and (max-width: 900px){
+        width: 100%;
+    }
+}
+.form-section{
+    @media screen and (max-width: 900px){
+        width: 100%;
+        height: 70%;
+        padding: 1.5rem;
+
+    }
+}
+.img-section{
+    @media screen and (max-width: 900px){
+        width: 100%;
+        height: 30%;
+        padding: 0;
+    }
+}
+.success-section{
+    margin: 0 auto;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.img-section img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+    @media screen and (max-width: 900px){
+        border-radius: 0 0 15px 15px;
+    }
+}
+
+.title-h1{
+    color: $DarkSlateGrey;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 3rem;
+}
+
+.title-h1-success{
+    @media screen and (max-width: 900px){
+        margin-bottom: 2rem;
+    }
+}
+
+.title-h2{
+    color: $DarkSlateGrey;
+    font-size: 1rem;
+    font-weight: 400;
+    @media screen and (max-width: 900px){
+        width: 90%;
+    }
+}
+.ul-list{
+    padding: 0;
+    margin: 0;
+}
+.li-item{
+    list-style: none;
+    margin-bottom: 0.5rem;
+    display: flex;
+    @media screen and (max-width: 900px){
+        width: 90%;
+    }
+}
+
+.li-item > span{
+    margin-right: 1rem;
+}
+
+.labels{
+    display: flex;
+    justify-content: space-between;
+    padding-inline: .5rem;
+}
+
+.form-title{
+    font-size: 0.8rem;
+    color: $DarkSlateGrey;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    
+}
+.error-p{
+    font-size: 0.8rem;
+    color: $Tomato;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.form-input{
+    width: 100%;
+    height: 3rem;
+    margin-bottom: 1rem;
+    border-radius: 15px;
+    padding: 1rem;
+    border: 1px solid $Grey;
+    cursor: pointer;
+    transition: all .5s ease-in-out ;
+}
+
+.form-input:focus{
+    outline: none;
+    border: 1px solid $Grey;
+    border-bottom: 2px solid $DarkSlateGrey;
+}
+
+.form-error{
+    width: 100%;
+    height: 3rem;
+    margin-bottom: 1rem;
+    border-radius: 15px;
+    padding: 1rem;
+    border: 1px solid tomato;
+    background-color: hsla(9, 100%, 64%, 0.5);
+    cursor: pointer;
+    transition: all .5s ease-in-out ;
+}
+
+.form.error:focus{
+    outline: none;
+}
+
+.btn{
+    color: $White;
+    font-weight: 700;
+    cursor: pointer;
+    width: 100%;
+    height: 3rem;
+    border-radius: 15px;
+    border: none;
+}
+
+.form-btn{
+    background: $DarkSlateGrey;
+    transition: all .3s ease-in-out ;
+    &:hover{
+        background: $Tomato
+    }
+}
+
+.success-btn{
+    background: $DarkSlateGrey;
+    &:hover{
+    background: $Tomato;
+    }
+    @media screen and (max-width: 900px){
+        position: absolute;
+        bottom: 4rem;
+        width: 90%;
+        left: 5%;
+    }
+}
+
+.success-btn.form-btn:focus{
+    background: $Tomato;
+    outline: none;
+}
+
+.success-p{
+    font-size: 1rem;
+    font-weight: 400;
+    color: $DarkSlateGrey;
+}
+.success-p>span{
+    font-weight: 700;
+}
+
+.span-img{
+    @media screen and (max-width: 900px){
+        margin-bottom: 3rem;
+    }
+}

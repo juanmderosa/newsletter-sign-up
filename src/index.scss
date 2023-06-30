@@ -1,0 +1,37 @@
+@import "./colors";
+@import "./components/MainContainer";
+
+
+/* Normalize */
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+* {
+    margin: 0;
+    font-weight: 400;
+}
+html, body {
+    height: 100%;
+    background-color: $CharcoalGrey;
+}
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 100vw;
+}
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+input, button, textarea, select {
+    font: inherit;
+}
+
+
+
+
