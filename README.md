@@ -31,6 +31,6 @@ The challenge is to build out this newsletter form where the users should be abl
 
 ## Author
 
-- Website - [juanmderosa-developer.com.ar](juanmderosa-developer.com.ar)
+- Website - [juanmderosa-developer.com.ar](https://juanmderosa-developer.com/)
 - Frontend Mentor - [@juanmderosa](https://www.frontendmentor.io/profile/juanmderosa)
 - Linkedin - [Juan Martín De Rosa](https://www.linkedin.com/in/juanmderosa/)
